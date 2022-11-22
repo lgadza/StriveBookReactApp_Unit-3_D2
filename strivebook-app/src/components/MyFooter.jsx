@@ -5,7 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class MyFooter extends Component {
   render() {
     return (
-      <Container bg="dark">
+      <Container
+        className="footerNav d-flex align-items-center justify-content-center"
+        bg="dark"
+      >
         <Row>
           <Col>@LouisStriveBook {new Date().getFullYear()}</Col>
         </Row>

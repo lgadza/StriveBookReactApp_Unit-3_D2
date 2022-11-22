@@ -7,8 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class MyNav extends Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg">
-        <Container>
+      <Navbar className="MyNav" bg="dark" expand="lg">
+        <Container className="mylist mx-auto">
           <Navbar.Brand href="#">Louis BookStrive</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

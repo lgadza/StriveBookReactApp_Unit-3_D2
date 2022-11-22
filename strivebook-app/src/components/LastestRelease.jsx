@@ -6,18 +6,16 @@ class LastestRelease extends Component {
   render() {
     return (
       <Container>
-        <Row xs={1} md={2} className="g-4">
-          {historyBooks.map((book) => (
-            <Col className="col-lg-3 my-2" key={book.asin}>
+        <Row className="g-4">
+          {historyBooks.slice(0, 4).map((book) => (
+            <Col
+              className="col-lg-4 col-xl-3 col-md-4 col-sm-6  col-xs-12 my-2"
+              key={book.asin}
+            >
               <Card>
                 <Card.Img className="bookCover" variant="top" src={book.img} />
                 <Card.Body>
                   <Card.Title className="bookTitle">{book.title}</Card.Title>
-                  {/* <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text> */}
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                   <ListGroup.Item>Price: ${book.price}</ListGroup.Item>
