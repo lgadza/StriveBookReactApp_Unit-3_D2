@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.jumbotron {
+  background-image: url("https://i.pinimg.com/originals/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.darken-jumbo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(21, 20, 20, 0.6);
+  z-index: -1;
+}
+.htmlBackgrourd {
+  color: #282c34;
+  background-color: #282c34;
+}
+.bookCover {
+  height: 350px;
+  object-fit: fill;
+}
