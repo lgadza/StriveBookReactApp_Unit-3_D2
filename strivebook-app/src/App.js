@@ -10,7 +10,7 @@ function App() {
       <MyNav />
       <Welcome />
       <LastestRelease />
-      <hr className="hr" />
+      <hr />
       <MyFooter />
     </div>
   );

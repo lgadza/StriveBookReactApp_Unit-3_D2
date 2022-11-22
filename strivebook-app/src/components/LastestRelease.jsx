@@ -7,9 +7,14 @@ class LastestRelease extends Component {
     return (
       <Container>
         <Row className="g-4">
-          {historyBooks.slice(0, 4).map((book) => (
+          {historyBooks.map((book) => (
             <Col
-              className="col-lg-4 col-xl-3 col-md-4 col-sm-6  col-xs-12 my-2"
+              lg={4}
+              xl={3}
+              md={4}
+              sm={6}
+              xs={12}
+              className=" bookContainer  my-2"
               key={book.asin}
             >
               <Card>
